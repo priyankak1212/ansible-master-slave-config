@@ -1,0 +1,6 @@
+---
+# defaults file for slave-node
+keypair: Cent
+instance_type: t2.micro
+image: ami-062f7200baf2fa504
+region: us-east-1

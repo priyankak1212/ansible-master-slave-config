@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: False
+  become: yes
+  roles:
+    - slave-node
+
+- hosts: webservers
+  gather_facts: False
+  become: yes
+  tasks:
+    - name : Install httpd
+      yum: name=httpd state=latest
